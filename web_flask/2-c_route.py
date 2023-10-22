@@ -18,11 +18,11 @@ def hbnb():
 
 
 @app.route("/c/<text>", strict_slashes=False)
-def c(text):
+def c_text(text):
     """ C -> followed by Text """
     return f"C {escape(text.replace('_', ' '))}"
 
 
-if __name__ == "__main__":
-  """ Listening on 0.0.0.0, port 5000 """
-    app.run(host="0.0.0.0")
+if __name__ == '__main__':
+    """ Listening on 0.0.0.0, port 5000 """
+    app.run(host='0.0.0.0', port=5000)
